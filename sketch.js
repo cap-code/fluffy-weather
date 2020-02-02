@@ -17,8 +17,8 @@ fileload();
 function getweather(){
 	url='http://api.openweathermap.org/data/2.5/weather?q='+input.value()+'&appid=dc7499b1c6351ec8aa8665f47eda58e6&units=metric';
   url1='http://api.openweathermap.org/data/2.5/forecast?q='+input.value()+'&appid=dc7499b1c6351ec8aa8665f47eda58e6&units=metric'
-	loadJSON(url,gotdata);
-	loadJSON(url1,againdata);
+	loadJSON(url,gotdata,'jsonp');
+	loadJSON(url1,againdata,'jsonp');
  }
 function fileload(){
 	for(var i=1;i<=4;i++){
